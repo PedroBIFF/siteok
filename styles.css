@@ -1,0 +1,494 @@
+.customBody {
+    font-family: arial;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.margin-right-none {
+    margin-right: 0px !important;
+}
+
+.textPequeno {
+    font-size: 5;
+}
+
+
+/*Body Grid Config*/
+
+.GridContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+    .GridContainer {
+        display: grid;
+    }
+}
+
+.gridHeader {
+    grid-area: header;
+}
+
+.gridMain {
+    grid-area: main;
+}
+
+.gridNav {
+    grid-area: nav;
+}
+
+.gridFooter {
+    grid-area: footer;
+}
+
+.grid-areas {
+    grid-template-areas: "header header header" "nav main main" "nav main main" "footer footer footer";
+}
+
+
+/*Fim Body Config*/
+
+
+/* Main Grid */
+
+.mainGridContainer {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.main-grid-areas {
+    grid-template-areas: "new new spot" "new new spot" "ticker ticker pequeno1" "calendar calendar pequeno2";
+}
+
+.gridWhatsNew {
+    grid-area: new;
+}
+
+.gridTicker {
+    grid-area: ticker;
+}
+
+.gridCalendar {
+    grid-area: calendar;
+}
+
+.gridSpot {
+    grid-area: spot;
+}
+
+.gridSpotPequeno1 {
+    grid-area: pequeno1;
+}
+
+.gridSpotPequeno2 {
+    grid-area: pequeno2;
+}
+
+
+/* Fim Main Grid */
+
+
+/* Header Grid */
+
+.headerGridContainer {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px
+}
+
+.header-grid-areas {
+    grid-template-areas: "logo conteudo" "logo conteudo"
+}
+
+.header-grid-logo {
+    grid-area: logo;
+}
+
+.header-grid-conteudo {
+    grid-area: conteudo;
+}
+
+
+/* Fim Nav Grid */
+
+
+/* Nav Grid */
+
+.navGridContainer {
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    padding-left: 0;
+}
+
+.nav-grid-areas {
+    grid-template-areas: "img img" "navBar navBar" "navBar navBar" "mostPular mostPular"
+}
+
+.nav-grid-img {
+    grid-area: img;
+}
+
+.nav-grid-bar {
+    grid-area: navBar;
+}
+
+.nav-grid-most {
+    grid-area: mostPular;
+}
+
+
+/* Fim Nav Grid */
+
+
+/* Header */
+
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: white;
+    color: white;
+}
+
+.headerConteudoLayout {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.header-a-secundario {
+    font-size: 10px;
+    color: black;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.headerUlSecundaria li {
+    flex: 1;
+    margin: 5px;
+    border: 2px solid #555;
+    background-color: white;
+}
+
+.headerUlSecundaria {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: row;
+}
+
+.logo {
+    padding: 5px;
+    border: 0px;
+    margin: 0px;
+    max-width: 50%;
+}
+
+.aHeaderBar {
+    text-align: left;
+    font-size: 10px;
+    color: blue;
+    font-weight: 200;
+    display: inline-block;
+    width: 100%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.ulHeader {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    flex-direction: row;
+}
+
+.liHeader {
+    padding: 20;
+    margin-left: 20;
+    display: flex;
+    text-align: left;
+}
+
+
+/* Fim Header */
+
+
+/* Nav */
+
+nav {
+    background-color: white;
+    padding: 10px;
+}
+
+.navDivTop {
+    background-color: red;
+}
+
+.placeholderImg {
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+}
+
+.aNav {
+    font-size: 10px;
+    border: red;
+    color: black;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.liNavBar {
+    margin: 5px;
+    border: 2px solid #555;
+}
+
+.ulNavBar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+}
+
+.aNavSecundario {
+    text-align: left;
+    font-size: 10px;
+    color: black;
+    font-weight: 200;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin: 3px;
+}
+
+.ulNavSecundario {
+    background-color: rgb(217, 217, 217);
+    list-style: none;
+    padding: 10;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: square;
+}
+
+.ulNavSecundario li {
+    text-align: left;
+}
+
+.divBorder {
+    border: 1px solid #555;
+}
+
+
+/* Fim Nav */
+
+
+/* Main*/
+
+main {
+    flex: 1;
+    padding: 5px;
+}
+
+.mainDiv {
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(217, 217, 217);
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.date {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: 100;
+}
+
+.mainWhatNewsMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.spotPequenoLayout {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+}
+
+.mainWhatNewsContextContainer {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+}
+
+.mainWhatNewsContextContainerImg {
+    max-width: 85%;
+    display: block;
+}
+
+.p_left {
+    text-align: left;
+}
+
+.calendarMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flexCollumnStart {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.flexRowStart {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+/* Calendar Div */
+
+.flexRowStartCalendar {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.flexRowStart {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+/* Fim Main*/
+
+
+/* 
+ Sided
+*/
+
+aside {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+}
+
+.centerText {
+    text-align: center;
+}
+
+aside>img {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    max-width: 60%;
+    display: block;
+}
+
+.spotImg {
+    padding: 5px;
+    border: 0px;
+    margin: 0px;
+    max-width: 100%;
+    max-height: 80;
+}
+
+.ImgPeqeuna {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    max-width: 150%;
+}
+
+
+/* 
+ Footer
+*/
+
+footer {
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #555;
+    grid-column: span 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /*
+    font-size: 1.4em;
+    */
+    background-color: white;
+    color: white;
+}
+
+.aFooter {
+    text-align: left;
+    font-size: 10px;
+    color: blue;
+    font-weight: 200;
+    display: inline-block;
+    width: 100%;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.ulFooter {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    flex-direction: row;
+}
+
+.liFooter {
+    padding: 20;
+    margin-left: 20;
+    display: flex;
+    text-align: left;
+}
+
+.h6Footer {
+    color: black;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
